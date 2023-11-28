@@ -97,7 +97,7 @@ let isNumeric;
 
 let passwordCriteria = {
 
-}
+};
 
 // Function to prompt user for password options
 function getPasswordOptions() {
@@ -115,13 +115,13 @@ function getPasswordOptions() {
   passwordCriteria.numeric = isNumeric;
   passwordCriteria.special = isSpecial;
   return passwordCriteria;
-}
+};
 
 // Function for getting a random element from an array
 function getRandom(arr) {
   randomElement = arr[Math.floor(Math.random()*arr.length)];
   return randomElement
-}
+};
 let randomPassword = [];
 // Function to generate password with user input
 function generatePassword() {
@@ -153,7 +153,7 @@ function generatePassword() {
   randomPasswordAsString = randomPassword.join("");
   console.log(randomPasswordAsString);
   return randomPasswordAsString
-}
+};
 
 // Get references to the #generate element
 var generateBtn = document.querySelector('#generate');
@@ -164,7 +164,7 @@ function writePassword() {
   var passwordText = document.querySelector('#password');
 
   passwordText.value = password;
-}
+};
 
 // Add event listener to generate button
 generateBtn.addEventListener('click', writePassword);
