@@ -151,7 +151,6 @@ function generatePassword() {
     randomPassword.splice(i, 1, getRandom(requiredChars));
   }
   randomPasswordAsString = randomPassword.join("");
-  console.log(randomPasswordAsString);
   return randomPasswordAsString
 };
 
